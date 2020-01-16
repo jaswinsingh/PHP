@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -27,14 +26,18 @@
     <title></title>
   </head>
   <body>
-    <form name="form1" method="post" action="displayfirst.php" enctype="multipart/form-data">
+<img src=""  style="height:50px;width:50px;"alt="">
+    <form name="form1" method="post" action="displaysecond.php" enctype="multipart/form-data">
       First Name - <input id="fName" type="text" name="fName" value="" placeholder="First name" onchange="checkalpha(document.form1.fName) ;"required>
       <br><br>
       Last Name - <input id="lName" type="text" name="lName" value="" placeholder="Last name" onchange="concat(), checkalpha(document.form1.lName);"required>
       <br><br>
       Full Name - <input  id="full" type="text" name="fullName" value="" disabled>
       <br><br>
-      <input type="submit" name="submit" >
+
+      <input type="file" name="file" >
+      <input type="submit" name="upload" >
+
     </form>
     </body>
   </html>
