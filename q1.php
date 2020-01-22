@@ -1,6 +1,11 @@
-<?php session_start(); /* Starts the session */
-if(isset($_SESSION['user']))
+<?php
+session_start();
+if(!isset($_SESSION['username']))
 {
+  header('location:login.php');
+}
+
+ ?>
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
     <head>
@@ -32,4 +37,3 @@ if(isset($_SESSION['user']))
 
     </body>
   </html>
-}
